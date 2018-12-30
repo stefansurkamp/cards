@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Card from './components/Card';
+import AddCardButton from './components/AddCardButton';
 
 class App extends Component {
   render() {
@@ -58,6 +59,7 @@ class App extends Component {
           sapien commodo massa aenean eros et conubia gravida et pulvinar.
         </Card>
         <Card size="m" />
+        <AddCardButton />
       </div>
     );
   }

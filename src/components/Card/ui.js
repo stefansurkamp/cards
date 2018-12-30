@@ -81,6 +81,7 @@ export const DragHandle = styled.div`
   text-align: center;
   border-radius: 5px;
   margin-left: 5px;
+  user-select: none;
 
   :hover {
     background-color: #add8e688;
