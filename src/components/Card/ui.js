@@ -1,6 +1,22 @@
 import styled, { css } from 'styled-components';
 import { ellipsis } from 'polished';
 
+export const DragHandle = styled.div`
+  flex: 0 0 20px;
+  color: gray;
+  visibility: hidden;
+  cursor: move;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 5px;
+  margin-left: 5px;
+  user-select: none;
+
+  :hover {
+    background-color: #add8e688;
+  }
+`;
+
 const emptyStyle = `color: gray; font-style: italic;`;
 
 const wrapperStyles = {
@@ -35,6 +51,10 @@ export const Wrapper = styled.div`
     box-shadow: 2px 2px #282c3422;
     transform: scale(1.1);
     cursor: pointer;
+
+    ${DragHandle} {
+      visibility: visible;
+    }
   }
 `;
 const titleBarStyles = {
@@ -65,27 +85,13 @@ export const TitleBar = styled.div`
 
 export const Title = styled.div`
   height: 100%;
+  padding-left: 20px;
   flex: 1;
   ${({ size }) => titleStyles[size] || titleStyles['m']};
   text-align: center;
   transition: all 0.25s ease-out;
   ${ellipsis()};
   ${({ isEmpty }) => isEmpty && emptyStyle}
-`;
-
-export const DragHandle = styled.div`
-  flex: 0 0 20px;
-  background-color: #add8e655;
-  cursor: move;
-  font-size: 15px;
-  text-align: center;
-  border-radius: 5px;
-  margin-left: 5px;
-  user-select: none;
-
-  :hover {
-    background-color: #add8e688;
-  }
 `;
 
 const imageStyles = {
