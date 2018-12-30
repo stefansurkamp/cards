@@ -1,25 +1,63 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Card from './components/Card';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <Card size="s">
+          Lorem ipsum malesuada himenaeos malesuada maecenas eu neque placerat
+          quisque etiam pretium a tortor mattis orci donec consequat convallis
+          gravida taciti lobortis. In leo conubia mi odio taciti, feugiat etiam
+          mattis donec interdum fringilla, ligula aptent volutpat primis cubilia
+          et cras euismod dictum arcu odio ligula porta nostra felis interdum.
+          Tempor libero interdum sodales donec neque molestie mi proin congue
+          donec, curabitur sociosqu sagittis malesuada sapien bibendum per purus
+          lectus faucibus, suscipit lorem luctus scelerisque fermentum ultricies
+          suspendisse donec vitae. Placerat erat lectus a adipiscing donec diam
+          neque, suscipit posuere semper suspendisse leo vehicula mi lacus, duis
+          tortor imperdiet luctus felis inceptos nullam conubia hendrerit donec
+          nam donec aliquet consequat tincidunt. Elit curae ut taciti curae
+          aliquet ac suscipit fames porta etiam habitasse a nisl, habitasse
+          sapien commodo massa aenean eros et conubia gravida et pulvinar.
+        </Card>
+        <Card size="m" title="This is actually nice">
+          Lorem ipsum malesuada himenaeos malesuada maecenas eu neque placerat
+          quisque etiam pretium a tortor mattis orci donec consequat convallis
+          gravida taciti lobortis. In leo conubia mi odio taciti, feugiat etiam
+          mattis donec interdum fringilla, ligula aptent volutpat primis cubilia
+          et cras euismod dictum arcu odio ligula porta nostra felis interdum.
+          Tempor libero interdum sodales donec neque molestie mi proin congue
+          donec, curabitur sociosqu sagittis malesuada sapien bibendum per purus
+          lectus faucibus, suscipit lorem luctus scelerisque fermentum ultricies
+          suspendisse donec vitae. Placerat erat lectus a adipiscing donec diam
+          neque, suscipit posuere semper suspendisse leo vehicula mi lacus, duis
+          tortor imperdiet luctus felis inceptos nullam conubia hendrerit donec
+          nam donec aliquet consequat tincidunt. Elit curae ut taciti curae
+          aliquet ac suscipit fames porta etiam habitasse a nisl, habitasse
+          sapien commodo massa aenean eros et conubia gravida et pulvinar.
+        </Card>
+        <Card
+          size="m"
+          title="This is actually niceThis is actually niceThis is actually niceThis is actually niceThis is actually nice"
+        >
+          Lorem ipsum malesuada himenaeos malesuada maecenas eu neque placerat
+          quisque etiam pretium a tortor mattis orci donec consequat convallis
+          gravida taciti lobortis. In leo conubia mi odio taciti, feugiat etiam
+          mattis donec interdum fringilla, ligula aptent volutpat primis cubilia
+          et cras euismod dictum arcu odio ligula porta nostra felis interdum.
+          Tempor libero interdum sodales donec neque molestie mi proin congue
+          donec, curabitur sociosqu sagittis malesuada sapien bibendum per purus
+          lectus faucibus, suscipit lorem luctus scelerisque fermentum ultricies
+          suspendisse donec vitae. Placerat erat lectus a adipiscing donec diam
+          neque, suscipit posuere semper suspendisse leo vehicula mi lacus, duis
+          tortor imperdiet luctus felis inceptos nullam conubia hendrerit donec
+          nam donec aliquet consequat tincidunt. Elit curae ut taciti curae
+          aliquet ac suscipit fames porta etiam habitasse a nisl, habitasse
+          sapien commodo massa aenean eros et conubia gravida et pulvinar.
+        </Card>
+        <Card size="m" />
       </div>
     );
   }
